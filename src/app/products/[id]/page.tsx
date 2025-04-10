@@ -10,8 +10,10 @@ interface ApiResponse {
 interface PageProps {
   params: Promise<{ id: string }>;
 }
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
 async function getProduct(id: string): Promise<Product> {
-  const res = await fetch(`http://localhost:3000/api/products/${id}`);
+  const res = await fetch(`${apiUrl}/api/products/${id}`);
 
   if (!res.ok) {
     notFound();

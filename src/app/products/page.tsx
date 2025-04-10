@@ -25,7 +25,7 @@ export default async function ProductsPage({
   //   // if (searchParams.minPrice) query.set('minPrice', searchParams.minPrice); // to be added later
   //   // if (searchParams.maxPrice) query.set('maxPrice', searchParams.maxPrice); // to be added later
   try {
-    const apiUrl = process.env.API_URL || 'http://localhost:3000';
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
     const res = await fetch(`${apiUrl}/api/products?${query.toString()}`, {
       next: { revalidate: 3600 },
     });

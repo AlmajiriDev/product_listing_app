@@ -30,6 +30,10 @@ Jummai Store is a modern e-commerce platform built with Next.js, featuring produ
 Installation
 npm install
 
+Add a .env.local to root of the file
+key:
+NEXT_PUBLIC_API_URL=http://localhost:3000 || the base url the app is running on
+
 Available Scripts (npm run any of these)
 dev: Runs the development server
 
