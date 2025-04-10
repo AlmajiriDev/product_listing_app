@@ -31,7 +31,9 @@ export default function RootLayout({
         <CartProvider>
           <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
             <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-              <h1 className="text-3xl font-bold text-green-950">Jummai (J)</h1>
+              <Link href="/" className="flex items-center cursor-pointer hover:transform hover:scale-105 transition-transform duration-300">
+                <h1 className="text-3xl font-bold text-green-950">Jummai (J)</h1>
+              </Link>
               <nav className="flex items-center gap-6">
                 <Link href="/products" className="hover:text-blue-600">
                   Products
