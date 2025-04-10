@@ -6,7 +6,7 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
 
-    // Get query parameters
+    // query parameters
     const page = searchParams.get('page') || '1';
     const limit = searchParams.get('limit') || '10';
     const category = searchParams.get('category');

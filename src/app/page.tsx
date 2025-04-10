@@ -15,7 +15,7 @@ export default function Home() {
 
         <p className="text-xl mb-8 text-gray-700">
           Welcome to <span className="font-bold">JUMMAI</span>, the most{' '}
-          <span className="font-bold">✨aMaZiNg✨</span> store in the universe!
+          <span className="font-bold">aMaZiNg</span> store in the out there!
           <br />
           Our products are so good, they&apos;ll make your wallet cry tears of joy.
         </p>
@@ -31,11 +31,6 @@ export default function Home() {
             </span>
           </Link>
         </div>
-
-        <p className="mt-12 text-gray-500">
-          P.S. Our lawyers made us say: &quot;Actual happiness may vary. Batteries not
-          included.&quot;
-        </p>
       </div>
     </div>
   );

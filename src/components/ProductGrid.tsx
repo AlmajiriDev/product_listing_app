@@ -7,7 +7,6 @@ import { useCart } from './CartContext';
 import { ProductsApiResponse, Product } from '../lib/types';
 import { useState, useEffect } from 'react';
 import LoadingSpinner from './LoadingSpinner';
-import { toast } from 'react-hot-toast';
 
 interface ProductGridProps {
   data: ProductsApiResponse;
@@ -50,36 +49,7 @@ export default function ProductGrid({ data }: ProductGridProps) {
     setIsAddingToCart((prev) => ({ ...prev, [product.id]: true }));
     try {
       await addToCart(product);
-      toast.success(
-        <div className="flex items-center">
-          <span className="mr-2">✅</span>
-          <span>
-            Added <span className="font-semibold">{product.title}</span> to cart!
-          </span>
-        </div>,
-        {
-          position: 'bottom-right',
-          duration: 3000,
-          style: {
-            backgroundColor: '#f0fdf4',
-            color: '#166534',
-          },
-        },
-      );
     } catch (error) {
-      toast.error(
-        <div className="flex items-center">
-          <span className="mr-2">❌</span>
-          <span>Failed to add to cart</span>
-        </div>,
-        {
-          position: 'bottom-right',
-          style: {
-            backgroundColor: '#fef2f2',
-            color: '#b91c1c',
-          },
-        },
-      );
       console.error('Failed to add to cart:', error);
     } finally {
       setIsAddingToCart((prev) => ({ ...prev, [product.id]: false }));
