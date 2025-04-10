@@ -59,7 +59,7 @@ export default function CartPage() {
 
       <div className="mt-8 border-t pt-6">
         <div className="flex justify-between items-center">
-          <h3 className="text-xl font-bold">Total: ${cartTotal.toFixed(2)}</h3>
+          <h3 className="text-xl font-bold">Total: ₦{cartTotal.toFixed(2)}</h3>
           <div className="flex gap-4">
             <button
               onClick={clearCart}
