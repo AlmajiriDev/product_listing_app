@@ -14,7 +14,7 @@ export default function Home() {
         </h1>
 
         <p className="text-xl mb-8 text-gray-700">
-          Welcome to the most <span className="font-bold">JUMMAI✨</span>, the most{' '}
+          Welcome to <span className="font-bold">JUMMAI</span>, the most{' '}
           <span className="font-bold">✨aMaZiNg✨</span> store in the universe!
           <br />
           Our products are so good, they&apos;ll make your wallet cry tears of joy.
