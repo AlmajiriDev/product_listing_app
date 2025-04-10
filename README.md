@@ -23,17 +23,14 @@ Jummai Store is a modern e-commerce platform built with Next.js, featuring produ
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/jummai-store.git
-   cd jummai-store
+   git clone https://github.com/AlmajiriDev/product_listing_app
+   cd product_listing_app
    ```
 
 Installation
 npm install
 
-Open the application
-Visit http://localhost:3000 in your browser
-
-Available Scripts
+Available Scripts (npm run any of these)
 dev: Runs the development server
 
 build: Creates an optimized production build
@@ -43,3 +40,7 @@ start: Starts the production server
 lint: Runs ESLint
 
 format: Formats code with Prettier
+
+Open the application
+
+Visit http://localhost:3000 in your browser

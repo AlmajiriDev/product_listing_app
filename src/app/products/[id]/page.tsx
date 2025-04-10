@@ -7,6 +7,9 @@ interface ApiResponse {
   product: Product;
 }
 
+interface PageProps {
+  params: Promise<{ id: string }>;
+}
 async function getProduct(id: string): Promise<Product> {
   const res = await fetch(`http://localhost:3000/api/products/${id}`);
 
@@ -18,9 +21,10 @@ async function getProduct(id: string): Promise<Product> {
   return data.product;
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   try {
-    const product = await getProduct(params.id);
+    const { id } = await params;
+    const product = await getProduct(id);
     return {
       title: `${product.title} | Our Store`,
       description: product.description,
@@ -35,10 +39,10 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     };
   }
 }
-
-export default async function ProductDetailPage({ params }: { params: { id: string } }) {
+export default async function ProductDetailPage({ params }: PageProps) {
   try {
-    const product = await getProduct(params.id);
+    const { id } = await params;
+    const product = await getProduct(id);
     return (
       <div className="max-w-7xl mx-auto px-4 py-8">
         <ProductDetails product={product} />

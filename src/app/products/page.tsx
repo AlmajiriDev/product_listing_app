@@ -10,26 +10,27 @@ interface SearchParams {
   maxPrice?: string;
 }
 
-export default async function ProductsPage({ searchParams }: { searchParams: SearchParams }) {
-  // Safely build query parameters without destructuring
+export default async function ProductsPage({
+  searchParams,
+}: {
+  searchParams: Promise<SearchParams>;
+}) {
+  const params = await searchParams;
+
   const query = new URLSearchParams();
 
-  // Handle each parameter individually
-  if (searchParams.page) query.set('page', searchParams.page);
-  if (searchParams.search) query.set('search', searchParams.search);
-  if (searchParams.category) query.set('category', searchParams.category);
-  // if (searchParams.minPrice) query.set('minPrice', searchParams.minPrice); // to be added later
-  // if (searchParams.maxPrice) query.set('maxPrice', searchParams.maxPrice); // to be added later
-
+  if (params.page) query.set('page', params.page);
+  if (params.search) query.set('search', params.search);
+  if (params.category) query.set('category', params.category);
+  //   // if (searchParams.minPrice) query.set('minPrice', searchParams.minPrice); // to be added later
+  //   // if (searchParams.maxPrice) query.set('maxPrice', searchParams.maxPrice); // to be added later
   try {
     const apiUrl = process.env.API_URL || 'http://localhost:3000';
     const res = await fetch(`${apiUrl}/api/products?${query.toString()}`, {
-      next: { revalidate: 3600 }, // ISR - revalidate every hour
+      next: { revalidate: 3600 },
     });
 
-    if (!res.ok) {
-      throw new Error(`Failed to fetch products: ${res.statusText}`);
-    }
+    if (!res.ok) throw new Error(`Failed to fetch products: ${res.statusText}`);
 
     const data: ProductsApiResponse = await res.json();
 
