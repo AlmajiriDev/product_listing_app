@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Headphones",
+    "price": 9999.85,
+    "description": "Premium noise-cancelling headphones",
+    "category": "electronics",
+    "image": "/products/wireless-headphone.jpeg",
+    "rating": { "rate": 4.5, "count": 120 }
+  },
+  {
+    "id": 2,
+    "title": "Smart Watch",
+    "price": 9999.85,
+    "description": "Fitness tracking and notifications",
+    "category": "electronics",
+    "image": "/products/smart-watch.jpeg",
+    "rating": { "rate": 4.2, "count": 85 }
+  },
+  {
+    "id": 3,
+    "title": "Gaming Laptop",
+    "price": 9999.85,
+    "description": "High-performance laptop for gaming",
+    "category": "electronics",
+    "image": "/products/gaming-laptop.jpeg",
+    "rating": { "rate": 4.8, "count": 50 }
+  },
+  {
+    "id": 4,
+    "title": "Bluetooth Speaker",
+    "price": 9999.85,
+    "description": "Portable wireless speaker with great sound",
+    "category": "electronics",
+    "image": "/products/bluetooth-speaker.jpeg",
+    "rating": { "rate": 4.0, "count": 200 }
+  },
+  {
+    "id": 5,
+    "title": "Smartphone",
+    "price": 9999.85,
+    "description": "Latest model with advanced features",
+    "category": "electronics",
+    "image": "/products/smart-phone.jpeg",
+    "rating": { "rate": 4.6, "count": 300 }
+  },
+  {
+    "id": 6,
+    "title": "4K TV",
+    "price": 9999.85,
+    "description": "Ultra HD Smart TV with HDR",
+    "category": "electronics",
+    "image": "/products/4k-tv.jpeg",
+    "rating": { "rate": 4.7, "count": 150 }
+  },
+  {
+    "id": 7,
+    "title": "Digital Camera",
+    "price": 9999.85,
+    "description": "High-resolution camera for photography enthusiasts",
+    "category": "electronics",
+    "image": "/products/camera.jpeg",
+    "rating": { "rate": 4.3, "count": 70 }
+  },
+  {
+    "id": 8,
+    "title": "Smart Refrigerator",
+    "price": 9999.85,
+    "description": "Energy-efficient refrigerator with smart features",
+    "category": "electronics",
+    "image": "/products/fridge.jpeg",
+    "rating": { "rate": 4.4, "count": 40 }
+  },
+  {
+    "id": 9,
+    "title": "Electric Toothbrush",
+    "price": 9999.85,
+    "description": "Rechargeable toothbrush with multiple modes",
+    "category": "electronics",
+    "image": "/products/tootbrush.jpeg",
+    "rating": { "rate": 4.1, "count": 90 }
+  },
+  {
+    "id": 10,
+    "title": "Smart Thermostat",
+    "price": 9999.85,
+    "description": "Wi-Fi enabled thermostat for energy savings",
+    "category": "electronics",
+    "image": "/products/thermostat.jpeg",
+    "rating": { "rate": 4.5, "count": 60 }
+  },
+  {
+    "id": 11,
+    "title": "Wireless Mouse",
+    "price": 9999.85,
+    "description": "Ergonomic wireless mouse with customizable buttons",
+    "category": "electronics",
+    "image": "/products/mouse.jpeg",
+    "rating": { "rate": 4.2, "count": 150 }
+  },
+  {
+    "id": 12,
+    "title": "Gaming Console",
+    "price": 9999.85,
+    "description": "Next-gen gaming console with exclusive titles",
+    "category": "electronics",
+    "image": "/products/console.jpeg",
+    "rating": { "rate": 4.9, "count": 200 }
+  },
+  {
+    "id": 13,
+    "title": "Smart Doorbell",
+    "price": 9999.85,
+    "description": "Wi-Fi enabled doorbell with video streaming",
+    "category": "electronics",
+    "image": "/products/doorbell.jpeg",
+    "rating": { "rate": 4.3, "count": 80 }
+  },
+  {
+    "id": 14,
+    "title": "Virtual Reality Headset",
+    "price": 9999.85,
+    "description": "Immersive VR experience for gaming and entertainment",
+    "category": "electronics",
+    "image": "/products/vr-headset.jpeg",
+    "rating": { "rate": 4.6, "count": 120 }
+  },
+  {
+    "id": 15,
+    "title": "Smart Scale",
+    "price": 9999.85,
+    "description": "Bluetooth scale with body composition analysis",
+    "category": "electronics",
+    "image": "/products/scale.jpeg",
+    "rating": { "rate": 4.4, "count": 110 }
+  },
+  {
+    "id": 16,
+    "title": "Wireless Charger",
+    "price": 9999.85,
+    "description": "Fast wireless charging pad for smartphones",
+    "category": "electronics",
+    "image": "/products/charger.jpeg",
+    "rating": { "rate": 4.1, "count": 130 }
+  }
+]
