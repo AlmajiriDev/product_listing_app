@@ -2,6 +2,8 @@
 
 Jummai Store is a modern e-commerce platform built with Next.js, featuring product listings, shopping cart functionality, and seamless checkout experience. All prices are displayed in Nigerian Naira (₦).
 
+## Live link: https://product-listing-app-ecru.vercel.app/
+
 ## Features
 
 - 🛍️ Product catalog with categories
